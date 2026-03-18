@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lic. Carolina García – Nutricionista | San Rafael, Mendoza</title>
-<meta name="description" content="Nutricionista en San Rafael, Mendoza. Consultas presenciales y virtuales. Planes personalizados para adultos, deportistas, embarazadas y geriátricos. Primera consulta gratis.">
+<meta name="description" content="Nutricionista en San Rafael, Mendoza. Consultas presenciales y virtuales. Planes personalizados para adultos, deportistas, embarazadas y geriátricos. Primera consulta con 50% de descuento.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -20,155 +20,56 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--dark);
-    overflow-x: hidden;
-  }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; }
 
-  /* NAV */
   nav {
     position: fixed; top: 0; width: 100%; z-index: 100;
     padding: 20px 48px;
     display: flex; justify-content: space-between; align-items: center;
-    background: rgba(245,240,232,0.92);
-    backdrop-filter: blur(12px);
+    background: rgba(245,240,232,0.92); backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(26,26,24,0.08);
   }
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem; letter-spacing: 0.02em;
-  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; letter-spacing: 0.02em; }
   .nav-logo span { color: var(--sage); }
   .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
-  .nav-links a {
-    text-decoration: none; color: var(--dark);
-    font-size: 0.88rem; font-weight: 500;
-    letter-spacing: 0.05em; text-transform: uppercase;
-    transition: color 0.2s;
-  }
+  .nav-links a { text-decoration: none; color: var(--dark); font-size: 0.88rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--sage); }
   .nav-social { display: flex; gap: 12px; align-items: center; }
   .nav-social a { color: var(--dark); transition: color 0.2s; display: flex; align-items: center; }
   .nav-social a:hover { color: var(--sage); }
-  .nav-cta {
-    background: var(--dark); color: var(--cream) !important;
-    padding: 10px 22px; border-radius: 100px;
-  }
+  .nav-cta { background: var(--dark); color: var(--cream) !important; padding: 10px 22px; border-radius: 100px; }
   .nav-cta:hover { background: var(--sage) !important; color: var(--cream) !important; }
 
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
-    overflow: hidden;
-  }
-  .hero-left {
-    padding: 80px 48px 80px 80px;
-    display: flex; flex-direction: column; justify-content: center;
-    position: relative; z-index: 2;
-  }
-  .hero-tag {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--sage-light); color: var(--dark);
-    padding: 6px 16px; border-radius: 100px;
-    font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em;
-    text-transform: uppercase; margin-bottom: 28px;
-    width: fit-content;
-  }
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; overflow: hidden; }
+  .hero-left { padding: 80px 48px 80px 80px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; }
+  .hero-tag { display: inline-flex; align-items: center; gap: 8px; background: var(--sage-light); color: var(--dark); padding: 6px 16px; border-radius: 100px; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; width: fit-content; }
   .hero-tag::before { content: '●'; color: var(--sage); font-size: 0.5rem; }
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    line-height: 1.1; margin-bottom: 8px;
-  }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5vw, 4.2rem); line-height: 1.1; margin-bottom: 8px; }
   .hero h1 em { font-style: italic; color: var(--sage); }
-  .hero-subtitle {
-    font-size: 1rem; color: var(--text-muted);
-    margin-bottom: 12px; letter-spacing: 0.04em;
-    text-transform: uppercase; font-weight: 300;
-  }
-  .hero-desc {
-    font-size: 1.05rem; line-height: 1.7;
-    color: #4A4A40; max-width: 420px;
-    margin-bottom: 40px; font-weight: 300;
-  }
+  .hero-subtitle { font-size: 1rem; color: var(--text-muted); margin-bottom: 12px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 300; }
+  .hero-desc { font-size: 1.05rem; line-height: 1.7; color: #4A4A40; max-width: 420px; margin-bottom: 40px; font-weight: 300; }
   .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
-  .btn-primary {
-    background: var(--dark); color: var(--cream);
-    padding: 14px 32px; border-radius: 100px;
-    text-decoration: none; font-weight: 500;
-    font-size: 0.9rem; letter-spacing: 0.02em;
-    transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px;
-  }
+  .btn-primary { background: var(--dark); color: var(--cream); padding: 14px 32px; border-radius: 100px; text-decoration: none; font-weight: 500; font-size: 0.9rem; letter-spacing: 0.02em; transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px; }
   .btn-primary:hover { background: var(--terracotta); transform: translateY(-2px); }
-  .btn-secondary {
-    background: transparent; color: var(--dark);
-    padding: 14px 32px; border-radius: 100px;
-    text-decoration: none; font-weight: 500;
-    font-size: 0.9rem; border: 1.5px solid var(--dark);
-    transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px;
-  }
+  .btn-secondary { background: transparent; color: var(--dark); padding: 14px 32px; border-radius: 100px; text-decoration: none; font-weight: 500; font-size: 0.9rem; border: 1.5px solid var(--dark); transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px; }
   .btn-secondary:hover { background: var(--dark); color: var(--cream); }
+  .hero-right { position: relative; overflow: hidden; }
+  .hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 
-  /* HERO DERECHO — foto */
-  .hero-right {
-    position: relative;
-    overflow: hidden;
-  }
-  .hero-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-  }
-
-  /* STRIP */
-  .strip {
-    background: var(--dark); color: var(--cream);
-    padding: 20px 0; overflow: hidden;
-  }
-  .strip-inner {
-    display: flex; gap: 48px; width: max-content;
-    animation: scroll 20s linear infinite;
-  }
-  .strip-item {
-    white-space: nowrap; font-size: 0.8rem;
-    text-transform: uppercase; letter-spacing: 0.1em;
-    opacity: 0.7; display: flex; align-items: center; gap: 12px;
-  }
+  .strip { background: var(--dark); color: var(--cream); padding: 20px 0; overflow: hidden; }
+  .strip-inner { display: flex; gap: 48px; width: max-content; animation: scroll 20s linear infinite; }
+  .strip-item { white-space: nowrap; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; display: flex; align-items: center; gap: 12px; }
   .strip-item::after { content: '✦'; opacity: 0.4; }
   @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-  /* SECTION BASE */
   section { padding: 100px 80px; }
-  .section-tag {
-    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em;
-    color: var(--sage); font-weight: 500; margin-bottom: 16px;
-  }
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    line-height: 1.15; margin-bottom: 20px;
-  }
+  .section-tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--sage); font-weight: 500; margin-bottom: 16px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.15; margin-bottom: 20px; }
   .section-title em { font-style: italic; color: var(--sage); }
 
-  /* SERVICIOS */
   .servicios { background: var(--warm-white); }
-  .servicios-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 2px; margin-top: 60px;
-    border: 2px solid var(--dark); border-radius: 20px; overflow: hidden;
-  }
-  .servicio-card {
-    padding: 40px 32px; background: var(--warm-white);
-    transition: background 0.3s;
-    border-right: 2px solid var(--dark);
-  }
+  .servicios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 60px; border: 2px solid var(--dark); border-radius: 20px; overflow: hidden; }
+  .servicio-card { padding: 40px 32px; background: var(--warm-white); transition: background 0.3s; border-right: 2px solid var(--dark); }
   .servicio-card:last-child { border-right: none; }
   .servicio-card:hover { background: var(--sage); color: white; }
   .servicio-card:hover .servicio-desc { color: rgba(255,255,255,0.8); }
@@ -176,42 +77,20 @@
   .servicio-icon { font-size: 2.2rem; margin-bottom: 20px; }
   .servicio-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 12px; }
   .servicio-desc { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px; }
-  .servicio-tag {
-    display: inline-block; background: var(--cream);
-    padding: 4px 12px; border-radius: 100px;
-    font-size: 0.75rem; font-weight: 500; color: var(--dark); letter-spacing: 0.05em;
-  }
+  .servicio-tag { display: inline-block; background: var(--cream); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 500; color: var(--dark); letter-spacing: 0.05em; }
 
-  /* PRECIOS */
   .precios { background: var(--cream); }
-  .precios-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 24px; margin-top: 60px;
-  }
-  .precio-card {
-    border: 2px solid var(--dark); border-radius: 20px;
-    padding: 40px 32px; position: relative;
-    transition: all 0.3s;
-  }
+  .precios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 60px; }
+  .precio-card { border: 2px solid var(--dark); border-radius: 20px; padding: 40px 32px; position: relative; transition: all 0.3s; }
   .precio-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
-  .precio-card.destacado {
-    background: var(--dark); color: var(--cream);
-    border-color: var(--dark);
-  }
+  .precio-card.destacado { background: var(--dark); color: var(--cream); border-color: var(--dark); }
   .precio-card.destacado .precio-desc { color: rgba(255,255,255,0.6); }
-  .precio-badge {
-    position: absolute; top: -14px; left: 32px;
-    background: var(--terracotta); color: white;
-    padding: 4px 14px; border-radius: 100px;
-    font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
-  }
+  .precio-badge { position: absolute; top: -14px; left: 32px; background: var(--terracotta); color: white; padding: 4px 14px; border-radius: 100px; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
   .precio-tipo { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.5; margin-bottom: 12px; }
-  .precio-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem; font-weight: 700; line-height: 1;
-    margin-bottom: 4px;
-  }
+  .precio-num { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; line-height: 1; margin-bottom: 4px; }
   .precio-num span { font-size: 1.2rem; font-weight: 400; opacity: 0.6; }
+  .precio-num-tachado { font-family: 'Playfair Display', serif; font-size: 1.4rem; opacity: 0.4; text-decoration: line-through; margin-bottom: 2px; }
+  .precio-descuento-badge { display: inline-flex; align-items: center; gap: 4px; background: var(--terracotta); color: white; padding: 3px 10px; border-radius: 100px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; margin-bottom: 8px; }
   .precio-duracion { font-size: 0.8rem; opacity: 0.5; margin-bottom: 20px; }
   .precio-divider { height: 1px; background: currentColor; opacity: 0.1; margin: 20px 0; }
   .precio-desc { font-size: 0.88rem; line-height: 1.6; color: var(--text-muted); }
@@ -220,275 +99,121 @@
   .precio-items li::before { content: '✓'; color: var(--sage); font-weight: 700; flex-shrink: 0; }
   .precio-card.destacado .precio-items li::before { color: var(--sage-light); }
 
-  /* PUBLICOS */
   .publicos { background: var(--dark); color: var(--cream); }
   .publicos .section-tag { color: var(--sage-light); }
-  .publicos-list {
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 1px; margin-top: 60px;
-    background: rgba(255,255,255,0.08); border-radius: 20px; overflow: hidden;
-  }
-  .publico-item {
-    background: var(--dark); padding: 48px 40px;
-    display: flex; gap: 24px; align-items: flex-start;
-    transition: background 0.3s;
-  }
+  .publicos-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 60px; background: rgba(255,255,255,0.08); border-radius: 20px; overflow: hidden; }
+  .publico-item { background: var(--dark); padding: 48px 40px; display: flex; gap: 24px; align-items: flex-start; transition: background 0.3s; }
   .publico-item:hover { background: #2A2A28; }
-  .publico-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem; color: var(--sage); opacity: 0.4;
-    line-height: 1; min-width: 50px;
-  }
+  .publico-num { font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--sage); opacity: 0.4; line-height: 1; min-width: 50px; }
   .publico-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 8px; }
   .publico-desc { color: rgba(255,255,255,0.55); font-size: 0.9rem; line-height: 1.6; }
 
-  /* PRIMERA CONSULTA */
-  .primera {
-    background: var(--terracotta); color: white;
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 40px; flex-wrap: wrap;
-  }
+  .primera { background: var(--terracotta); color: white; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
   .primera-content { max-width: 560px; }
   .primera .section-tag { color: rgba(255,255,255,0.7); }
   .primera .section-title { color: white; }
   .primera-desc { font-size: 1.05rem; line-height: 1.7; opacity: 0.9; margin-bottom: 0; }
   .primera .btn-primary { background: white; color: var(--terracotta); }
   .primera .btn-primary:hover { background: var(--dark); color: white; }
-  .primera-badge {
-    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
-    padding: 32px 40px; border-radius: 20px; text-align: center; min-width: 200px;
-  }
+  .primera-badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 32px 40px; border-radius: 20px; text-align: center; min-width: 200px; }
   .primera-badge-text { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; }
   .primera-badge-sub { font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
 
-  /* COMO FUNCIONA */
   .como { background: var(--warm-white); }
-  .pasos {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 0; margin-top: 60px; position: relative;
-  }
-  .pasos::before {
-    content: ''; position: absolute; top: 28px; left: 12%;
-    width: 76%; height: 2px; background: var(--sage-light); z-index: 0;
-  }
+  .pasos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 60px; position: relative; }
+  .pasos::before { content: ''; position: absolute; top: 28px; left: 12%; width: 76%; height: 2px; background: var(--sage-light); z-index: 0; }
   .paso { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
-  .paso-num {
-    width: 56px; height: 56px; border-radius: 50%;
-    background: var(--dark); color: var(--cream);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Playfair Display', serif; font-size: 1.3rem;
-    margin: 0 auto 24px;
-  }
+  .paso-num { width: 56px; height: 56px; border-radius: 50%; background: var(--dark); color: var(--cream); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.3rem; margin: 0 auto 24px; }
   .paso-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 8px; }
   .paso-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
 
-  /* RESEÑAS */
   .resenas { background: var(--cream); }
   .resenas .section-title { margin-bottom: 8px; }
   .resenas-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 60px; }
-  .resenas-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-  }
-  .resena-card {
-    background: var(--warm-white); border-radius: 20px;
-    padding: 32px; border: 1px solid rgba(0,0,0,0.06);
-    display: flex; flex-direction: column; gap: 16px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
+  .resenas-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .resena-card { background: var(--warm-white); border-radius: 20px; padding: 32px; border: 1px solid rgba(0,0,0,0.06); display: flex; flex-direction: column; gap: 16px; transition: transform 0.3s, box-shadow 0.3s; }
   .resena-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.07); }
   .resena-stars { color: #F4B942; font-size: 1rem; letter-spacing: 2px; }
   .resena-texto { font-size: 0.93rem; line-height: 1.7; color: #3A3A32; font-style: italic; flex: 1; }
   .resena-footer { display: flex; align-items: center; gap: 12px; }
-  .resena-avatar {
-    width: 40px; height: 40px; border-radius: 50%;
-    background: var(--sage-light); display: flex; align-items: center; justify-content: center;
-    font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--dark); font-weight: 700;
-    flex-shrink: 0;
-  }
+  .resena-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--sage-light); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--dark); font-weight: 700; flex-shrink: 0; }
   .resena-nombre { font-weight: 500; font-size: 0.88rem; }
   .resena-origen { font-size: 0.75rem; color: var(--text-muted); }
-  .resena-google-badge {
-    margin-left: auto; display: flex; align-items: center; gap: 4px;
-    font-size: 0.72rem; color: var(--text-muted); opacity: 0.6;
-  }
+  .resena-google-badge { margin-left: auto; display: flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--text-muted); opacity: 0.6; }
 
-  /* CARNET BANNER */
-  .carnet-banner {
-    background: var(--sage); color: white;
-    padding: 60px 80px;
-    display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;
-  }
+  .carnet-banner { background: var(--sage); color: white; padding: 60px 80px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
   .carnet-banner h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 8px; }
   .carnet-banner p { opacity: 0.85; font-size: 0.95rem; max-width: 480px; }
-  .btn-white {
-    background: white; color: var(--sage);
-    padding: 14px 32px; border-radius: 100px;
-    text-decoration: none; font-weight: 500; font-size: 0.9rem;
-    transition: all 0.3s; white-space: nowrap;
-    display: inline-flex; align-items: center; gap: 8px;
-  }
+  .btn-white { background: white; color: var(--sage); padding: 14px 32px; border-radius: 100px; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: all 0.3s; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
   .btn-white:hover { background: var(--dark); color: white; }
 
-  /* AGENDA */
   .agenda { background: var(--warm-white); }
   .agenda-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; align-items: center; }
   .agenda-info h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 16px; }
   .agenda-info p { color: var(--text-muted); line-height: 1.7; margin-bottom: 32px; }
   .agenda-items { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
-  .agenda-item {
-    display: flex; align-items: center; gap: 16px;
-    padding: 16px 20px; border-radius: 12px;
-    background: var(--cream); border: 1px solid rgba(0,0,0,0.06);
-  }
+  .agenda-item { display: flex; align-items: center; gap: 16px; padding: 16px 20px; border-radius: 12px; background: var(--cream); border: 1px solid rgba(0,0,0,0.06); }
   .agenda-item-icon { font-size: 1.4rem; }
   .agenda-item-text { font-size: 0.9rem; }
   .agenda-item-text strong { display: block; margin-bottom: 2px; }
   .agenda-item-text span { color: var(--text-muted); font-size: 0.82rem; }
-  .agenda-cta-box {
-    background: var(--dark); color: var(--cream);
-    padding: 48px 40px; border-radius: 24px; text-align: center;
-  }
+  .agenda-cta-box { background: var(--dark); color: var(--cream); padding: 48px 40px; border-radius: 24px; text-align: center; }
   .agenda-cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 12px; }
   .agenda-cta-box p { opacity: 0.7; font-size: 0.9rem; margin-bottom: 28px; line-height: 1.6; }
-  .btn-whatsapp {
-    background: #25D366; color: white;
-    padding: 16px 36px; border-radius: 100px;
-    text-decoration: none; font-weight: 500; font-size: 1rem;
-    display: inline-flex; align-items: center; gap: 10px;
-    transition: all 0.3s;
-  }
+  .btn-whatsapp { background: #25D366; color: white; padding: 16px 36px; border-radius: 100px; text-decoration: none; font-weight: 500; font-size: 1rem; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; }
   .btn-whatsapp:hover { background: #1da851; transform: translateY(-2px); }
   .whatsapp-icon { width: 22px; height: 22px; fill: white; }
 
-  /* SOBRE MI */
   .sobremi { background: var(--cream); }
   .sobremi-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: center; margin-top: 60px; }
   .sobremi-img { aspect-ratio: 3/4; border-radius: 24px; overflow: hidden; }
-  .sobremi-img img {
-    width: 100%; height: 100%;
-    object-fit: cover; object-position: center top;
-    display: block;
-  }
+  .sobremi-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
   .sobremi-content .section-tag { margin-bottom: 12px; }
   .sobremi-content p { color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem; }
   .sobremi-credentials { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
   .credential { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; font-weight: 500; }
   .credential::before { content: '✓'; color: var(--sage); font-weight: 700; }
   .sobremi-social { display: flex; gap: 12px; margin-top: 28px; }
-  .social-btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 10px 20px; border-radius: 100px;
-    border: 1.5px solid var(--dark); text-decoration: none;
-    color: var(--dark); font-size: 0.82rem; font-weight: 500;
-    transition: all 0.3s;
-  }
+  .social-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 100px; border: 1.5px solid var(--dark); text-decoration: none; color: var(--dark); font-size: 0.82rem; font-weight: 500; transition: all 0.3s; }
   .social-btn:hover { background: var(--dark); color: var(--cream); }
 
-  /* FOOTER */
   footer { background: var(--dark); color: var(--cream); padding: 60px 80px 40px; }
-  .footer-top {
-    display: flex; justify-content: space-between; align-items: flex-start;
-    padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1);
-    gap: 40px; flex-wrap: wrap;
-  }
+  .footer-top { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); gap: 40px; flex-wrap: wrap; }
   .footer-brand { max-width: 300px; }
   .footer-brand .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 12px; }
   .footer-brand .logo span { color: var(--sage-light); }
   .footer-brand p { opacity: 0.55; font-size: 0.85rem; line-height: 1.6; }
   .footer-social { display: flex; gap: 12px; margin-top: 16px; }
-  .footer-social a {
-    width: 36px; height: 36px; border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.2);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--cream); opacity: 0.6; transition: all 0.2s; text-decoration: none;
-  }
+  .footer-social a { width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; color: var(--cream); opacity: 0.6; transition: all 0.2s; text-decoration: none; }
   .footer-social a:hover { opacity: 1; border-color: var(--sage-light); color: var(--sage-light); }
   .footer-links h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.5; margin-bottom: 16px; }
   .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
   .footer-links a { color: var(--cream); opacity: 0.7; text-decoration: none; font-size: 0.9rem; transition: opacity 0.2s; }
   .footer-links a:hover { opacity: 1; }
-  .footer-bottom {
-    padding-top: 32px; display: flex; justify-content: space-between;
-    align-items: center; opacity: 0.4; font-size: 0.8rem; flex-wrap: wrap; gap: 12px;
-  }
+  .footer-bottom { padding-top: 32px; display: flex; justify-content: space-between; align-items: center; opacity: 0.4; font-size: 0.8rem; flex-wrap: wrap; gap: 12px; }
 
   /* WHATSAPP FLOTANTE */
-  .whatsapp-float {
-    position: fixed; bottom: 28px; right: 28px; z-index: 999;
-    display: flex; align-items: center; gap: 0;
-    filter: drop-shadow(0 4px 16px rgba(37,211,102,0.4));
-    transition: all 0.3s;
-  }
+  .whatsapp-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; filter: drop-shadow(0 4px 16px rgba(37,211,102,0.4)); transition: all 0.3s; }
   .whatsapp-float:hover { filter: drop-shadow(0 6px 24px rgba(37,211,102,0.6)); transform: translateY(-3px); }
-  .whatsapp-float-btn {
-    width: 60px; height: 60px; border-radius: 50%;
-    background: #25D366; display: flex; align-items: center; justify-content: center;
-    text-decoration: none; transition: all 0.3s;
-  }
+  .whatsapp-float-btn { width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; text-decoration: none; }
   .whatsapp-float-btn svg { width: 30px; height: 30px; fill: white; }
-  .whatsapp-float-label {
-    background: white; color: #1A1A18;
-    padding: 10px 16px; border-radius: 100px;
-    font-size: 0.82rem; font-weight: 500;
-    white-space: nowrap; margin-right: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    opacity: 0; transform: translateX(10px);
-    transition: all 0.3s; pointer-events: none;
-  }
-  .whatsapp-float:hover .whatsapp-float-label {
-    opacity: 1; transform: translateX(0);
-  }
+  .whatsapp-float-label { background: white; color: #1A1A18; padding: 10px 16px; border-radius: 100px; font-size: 0.82rem; font-weight: 500; white-space: nowrap; margin-right: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); opacity: 0; transform: translateX(10px); transition: all 0.3s; pointer-events: none; }
+  .whatsapp-float:hover .whatsapp-float-label { opacity: 1; transform: translateX(0); }
 
   /* MOBILE MENU */
-  .hamburger {
-    display: none; flex-direction: column; gap: 5px;
-    background: none; border: none; cursor: pointer; padding: 4px; z-index: 200;
-  }
-  .hamburger span {
-    display: block; width: 24px; height: 2px;
-    background: var(--dark); border-radius: 2px;
-    transition: all 0.3s;
-  }
+  .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--dark); border-radius: 2px; transition: all 0.3s; }
   .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  .mobile-menu {
-    display: none; position: fixed; inset: 0; z-index: 150;
-    background: var(--cream);
-    flex-direction: column; align-items: center; justify-content: center;
-    gap: 8px;
-    opacity: 0; pointer-events: none; transition: opacity 0.3s;
-  }
+  .mobile-menu { display: none; position: fixed; inset: 0; z-index: 150; background: var(--cream); flex-direction: column; align-items: center; justify-content: center; gap: 8px; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
   .mobile-menu.open { opacity: 1; pointer-events: all; display: flex; }
-  .mobile-menu a {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.8rem, 8vw, 2.8rem);
-    color: var(--dark); text-decoration: none;
-    font-weight: 400; letter-spacing: 0.02em;
-    padding: 8px 24px; transition: color 0.2s;
-  }
+  .mobile-menu a { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 8vw, 2.8rem); color: var(--dark); text-decoration: none; font-weight: 400; letter-spacing: 0.02em; padding: 8px 24px; transition: color 0.2s; }
   .mobile-menu a:hover { color: var(--sage); }
-  .mobile-menu a.cta {
-    margin-top: 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1rem; font-weight: 500;
-    background: var(--dark); color: var(--cream) !important;
-    padding: 16px 40px; border-radius: 100px;
-    letter-spacing: 0.04em;
-  }
-  .mobile-menu-social {
-    display: flex; gap: 20px; margin-top: 24px;
-  }
-  .mobile-menu-social a {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem !important; padding: 0 !important;
-    color: var(--text-muted) !important;
-    display: flex; align-items: center; gap: 6px;
-  }
+  .mobile-menu a.cta { margin-top: 16px; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; background: var(--dark); color: var(--cream) !important; padding: 16px 40px; border-radius: 100px; letter-spacing: 0.04em; }
+  .mobile-menu-social { display: flex; gap: 20px; margin-top: 24px; }
+  .mobile-menu-social a { font-family: 'DM Sans', sans-serif; font-size: 0.85rem !important; padding: 0 !important; color: var(--text-muted) !important; display: flex; align-items: center; gap: 6px; }
 
-  /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
@@ -519,7 +244,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">Carolina <span>García</span></div>
   <ul class="nav-links">
@@ -529,10 +253,10 @@
     <li><a href="#carnet">Carnet</a></li>
     <li>
       <div class="nav-social">
-        <a href="https://instagram.com/carogarcia2940" target="_blank" title="Instagram" aria-label="Instagram">
+        <a href="https://instagram.com/carogarcia2940" target="_blank" aria-label="Instagram">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a href="https://www.linkedin.com/in/carolina-garcia-02ab663aa" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/carolina-garcia-02ab663aa" target="_blank" aria-label="LinkedIn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
       </div>
@@ -544,14 +268,13 @@
   </button>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#servicios" class="mobile-link">Servicios</a>
   <a href="#precios" class="mobile-link">Precios</a>
   <a href="#publicos" class="mobile-link">¿Para quién?</a>
   <a href="#sobre-mi" class="mobile-link">Sobre mí</a>
   <a href="#carnet" class="mobile-link">Carnet</a>
-  <a href="#agenda" class="cta mobile-link">Sacar turno gratis</a>
+  <a href="#agenda" class="cta mobile-link">Sacar turno</a>
   <div class="mobile-menu-social">
     <a href="https://instagram.com/carogarcia2940" target="_blank">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -564,7 +287,6 @@
   </div>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag">Nutricionista · San Rafael, Mendoza</div>
@@ -574,7 +296,7 @@
     <div class="hero-actions">
       <a href="#agenda" class="btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-        Sacar turno gratis
+        50% off primera consulta
       </a>
       <a href="#servicios" class="btn-secondary">Ver servicios</a>
     </div>
@@ -584,27 +306,25 @@
   </div>
 </section>
 
-<!-- STRIP -->
 <div class="strip">
   <div class="strip-inner">
     <span class="strip-item">Consultas presenciales</span>
     <span class="strip-item">Consultas virtuales</span>
     <span class="strip-item">Planes personalizados</span>
     <span class="strip-item">Seguimiento por WhatsApp</span>
-    <span class="strip-item">Primera consulta gratis</span>
+    <span class="strip-item">50% off primera consulta</span>
     <span class="strip-item">Carnet manipulación de alimentos</span>
     <span class="strip-item">Matrícula MP 1264</span>
     <span class="strip-item">Consultas presenciales</span>
     <span class="strip-item">Consultas virtuales</span>
     <span class="strip-item">Planes personalizados</span>
     <span class="strip-item">Seguimiento por WhatsApp</span>
-    <span class="strip-item">Primera consulta gratis</span>
+    <span class="strip-item">50% off primera consulta</span>
     <span class="strip-item">Carnet manipulación de alimentos</span>
     <span class="strip-item">Matrícula MP 1264</span>
   </div>
 </div>
 
-<!-- SERVICIOS -->
 <section class="servicios" id="servicios">
   <p class="section-tag">¿Qué ofrezco?</p>
   <h2 class="section-title">Servicios <em>a tu medida</em></h2>
@@ -623,28 +343,30 @@
     </div>
     <div class="servicio-card">
       <div class="servicio-icon">✨</div>
-      <h3 class="servicio-title">Primera Consulta Gratuita</h3>
-      <p class="servicio-desc">Conocemos tu caso, tus objetivos y evaluamos juntos si podemos trabajar. Sin compromiso, sin costo.</p>
-      <span class="servicio-tag">Sin costo</span>
+      <h3 class="servicio-title">Primera Consulta con 50% OFF</h3>
+      <p class="servicio-desc">Conocemos tu caso, tus objetivos y evaluamos juntos cómo puedo ayudarte. Con un descuento especial para que arrancar sea fácil.</p>
+      <span class="servicio-tag">50% descuento</span>
     </div>
   </div>
 </section>
 
-<!-- PRECIOS -->
 <section class="precios" id="precios">
   <p class="section-tag">Inversión</p>
   <h2 class="section-title">Precios <em>claros</em></h2>
   <div class="precios-grid">
     <div class="precio-card">
+      <div class="precio-badge">Oferta de inicio</div>
       <div class="precio-tipo">Primera consulta</div>
-      <div class="precio-num"><span>$</span>0</div>
-      <div class="precio-duracion">Sin costo · Sin compromiso</div>
+      <div class="precio-num-tachado">$25.000</div>
+      <div class="precio-descuento-badge">50% OFF</div>
+      <div class="precio-num"><span>$</span>12.500</div>
+      <div class="precio-duracion">Primera vez · ~50 min</div>
       <div class="precio-divider"></div>
       <ul class="precio-items">
         <li>Evaluación de tu situación</li>
         <li>Conocemos tus objetivos</li>
         <li>Te cuento cómo puedo ayudarte</li>
-        <li>Sin obligación de continuar</li>
+        <li>Mitad de precio para empezar</li>
       </ul>
     </div>
     <div class="precio-card destacado">
@@ -675,7 +397,6 @@
   </div>
 </section>
 
-<!-- PUBLICOS -->
 <section class="publicos" id="publicos">
   <p class="section-tag">¿Para quién?</p>
   <h2 class="section-title">Trabajo con <em>todos</em></h2>
@@ -711,23 +432,21 @@
   </div>
 </section>
 
-<!-- PRIMERA CONSULTA -->
 <section class="primera">
   <div class="primera-content">
-    <p class="section-tag">Sin riesgo</p>
-    <h2 class="section-title">Primera consulta<br><em>completamente gratis</em></h2>
-    <p class="primera-desc">No hace falta comprometerse a nada. Primero nos conocemos, entiendo tu situación y te cuento cómo podría ayudarte. Si te convence, seguimos.</p>
+    <p class="section-tag">Oferta de inicio</p>
+    <h2 class="section-title">Primera consulta<br><em>con 50% de descuento</em></h2>
+    <p class="primera-desc">Para que arrancar sea fácil. Nos conocemos, entiendo tu situación y te cuento cómo puedo ayudarte — a la mitad del precio normal.</p>
   </div>
   <div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
     <div class="primera-badge">
-      <div class="primera-badge-text">$0</div>
-      <div class="primera-badge-sub">Primera consulta</div>
+      <div class="primera-badge-text">50% OFF</div>
+      <div class="primera-badge-sub">Primera consulta · $12.500</div>
     </div>
     <a href="#agenda" class="btn-primary">Reservar ahora →</a>
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
 <section class="como" id="como-funciona">
   <p class="section-tag">El proceso</p>
   <h2 class="section-title">Así <em>funciona</em></h2>
@@ -735,7 +454,7 @@
     <div class="paso">
       <div class="paso-num">1</div>
       <h4 class="paso-title">Contacto</h4>
-      <p class="paso-desc">Me escribís por WhatsApp y coordinamos la primera consulta gratuita.</p>
+      <p class="paso-desc">Me escribís por WhatsApp y coordinamos tu primera consulta con 50% off.</p>
     </div>
     <div class="paso">
       <div class="paso-num">2</div>
@@ -755,145 +474,86 @@
   </div>
 </section>
 
-<!-- RESEÑAS -->
 <section class="resenas" id="resenas">
   <p class="section-tag">Lo que dicen</p>
   <h2 class="section-title">Reseñas <em>reales</em></h2>
   <p class="resenas-sub">Opiniones reales de alumnos del curso de carnet de manipulación de alimentos ⭐ Google Reviews</p>
   <div class="resenas-grid">
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"La profe súper copada!!! Un amor y explica genial! La verdad que muy lindo todo!!!"</p>
       <div class="resena-footer">
         <div class="resena-avatar">B</div>
-        <div>
-          <div class="resena-nombre">Brisa Piaser</div>
-          <div class="resena-origen">Hace 2 semanas</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Brisa Piaser</div><div class="resena-origen">Hace 2 semanas</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"Muy completo el curso, rápido y fácil de hacer. La profe excelente 100% recomendado."</p>
       <div class="resena-footer">
         <div class="resena-avatar">C</div>
-        <div>
-          <div class="resena-nombre">Ciin Moya</div>
-          <div class="resena-origen">Hace 3 semanas</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Ciin Moya</div><div class="resena-origen">Hace 3 semanas</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"Muy recomendable. Rápido, fácil, las clases muy completas."</p>
       <div class="resena-footer">
         <div class="resena-avatar">R</div>
-        <div>
-          <div class="resena-nombre">Rocio Morales</div>
-          <div class="resena-origen">Hace 3 semanas</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Rocio Morales</div><div class="resena-origen">Hace 3 semanas</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"Me fue muy útil, me encantó gracias Caro."</p>
       <div class="resena-footer">
         <div class="resena-avatar">S</div>
-        <div>
-          <div class="resena-nombre">Silvia Pastor</div>
-          <div class="resena-origen">Hace 2 semanas</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Silvia Pastor</div><div class="resena-origen">Hace 2 semanas</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"Excelente profesional gracias."</p>
       <div class="resena-footer">
         <div class="resena-avatar">C</div>
-        <div>
-          <div class="resena-nombre">Claudia Vilchez</div>
-          <div class="resena-origen">Hace 1 semana</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Claudia Vilchez</div><div class="resena-origen">Hace 1 semana</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"Recomendado al 100."</p>
       <div class="resena-footer">
         <div class="resena-avatar">S</div>
-        <div>
-          <div class="resena-nombre">Sol Borges</div>
-          <div class="resena-origen">Hace 2 semanas</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Sol Borges</div><div class="resena-origen">Hace 2 semanas</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"Muy buena la profe, te explica todo desde el minuto uno."</p>
       <div class="resena-footer">
         <div class="resena-avatar">D</div>
-        <div>
-          <div class="resena-nombre">Denis Salinas</div>
-          <div class="resena-origen">Hace 23 horas</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Denis Salinas</div><div class="resena-origen">Hace 23 horas</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
     <div class="resena-card">
       <div class="resena-stars">★★★★★</div>
       <p class="resena-texto">"Excelente el curso, muy bien explicado y con información relevante."</p>
       <div class="resena-footer">
         <div class="resena-avatar">J</div>
-        <div>
-          <div class="resena-nombre">Jessica Leiva Rojo</div>
-          <div class="resena-origen">Hace 1 día · Local Guide</div>
-        </div>
-        <div class="resena-google-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          Google
-        </div>
+        <div><div class="resena-nombre">Jessica Leiva Rojo</div><div class="resena-origen">Hace 1 día · Local Guide</div></div>
+        <div class="resena-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google</div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- CARNET BANNER -->
 <div class="carnet-banner" id="carnet">
   <div>
     <h3>¿Necesitás el carnet de manipulación de alimentos?</h3>
@@ -902,7 +562,6 @@
   <a href="https://carnetmanipulacionalimentos.netlify.app" target="_blank" class="btn-white">Ver curso →</a>
 </div>
 
-<!-- AGENDA -->
 <section class="agenda" id="agenda">
   <p class="section-tag">¿Empezamos?</p>
   <h2 class="section-title">Sacá tu <em>turno</em></h2>
@@ -913,48 +572,33 @@
       <div class="agenda-items">
         <div class="agenda-item">
           <div class="agenda-item-icon">📍</div>
-          <div class="agenda-item-text">
-            <strong>Consultorio</strong>
-            <span>Paraguay 97, San Rafael, Mendoza</span>
-          </div>
+          <div class="agenda-item-text"><strong>Consultorio</strong><span>Paraguay 97, San Rafael, Mendoza</span></div>
         </div>
         <div class="agenda-item">
           <div class="agenda-item-icon">💻</div>
-          <div class="agenda-item-text">
-            <strong>Virtual</strong>
-            <span>Por Google Meet o videollamada</span>
-          </div>
+          <div class="agenda-item-text"><strong>Virtual</strong><span>Por Google Meet o videollamada</span></div>
         </div>
         <div class="agenda-item">
           <div class="agenda-item-icon">📞</div>
-          <div class="agenda-item-text">
-            <strong>Teléfono</strong>
-            <span>0260 484-0322</span>
-          </div>
+          <div class="agenda-item-text"><strong>Teléfono</strong><span>0260 484-0322</span></div>
         </div>
         <div class="agenda-item">
           <div class="agenda-item-icon">🕐</div>
-          <div class="agenda-item-text">
-            <strong>Horario de atención</strong>
-            <span>Lunes a viernes · 9:00 a 18:00 hs</span>
-          </div>
+          <div class="agenda-item-text"><strong>Horario de atención</strong><span>Lunes a viernes · 9:00 a 18:00 hs</span></div>
         </div>
       </div>
     </div>
     <div class="agenda-cta-box">
       <h3>Escribime por WhatsApp</h3>
-      <p>Es la forma más rápida de coordinar tu turno. Te respondo a la brevedad y buscamos el horario que mejor te quede.</p>
+      <p>Es la forma más rápida de coordinar tu turno con el 50% off. Te respondo a la brevedad y buscamos el horario que mejor te quede.</p>
       <a href="https://wa.me/542604840322?text=Hola%20Carolina!%20Quiero%20sacar%20un%20turno%20para%20consulta%20nutricional." class="btn-whatsapp" target="_blank">
-        <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
+        <svg class="whatsapp-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Escribir por WhatsApp
       </a>
     </div>
   </div>
 </section>
 
-<!-- SOBRE MI -->
 <section class="sobremi" id="sobre-mi">
   <div class="sobremi-grid">
     <div class="sobremi-img">
@@ -970,7 +614,7 @@
         <div class="credential">Licenciada en Nutrición – UNCuyo · Matrícula MP 1264</div>
         <div class="credential">Capacitadora oficial – Carnet de Manipulación de Alimentos</div>
         <div class="credential">Atención presencial en San Rafael y virtual para todo el país</div>
-        <div class="credential">Primera consulta siempre gratuita</div>
+        <div class="credential">50% off en la primera consulta</div>
       </div>
       <div class="sobremi-social">
         <a href="https://instagram.com/carogarcia2940" target="_blank" class="social-btn">
@@ -986,7 +630,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
@@ -1037,26 +680,21 @@
   </div>
 </footer>
 
-<!-- WHATSAPP FLOTANTE -->
 <div class="whatsapp-float">
   <span class="whatsapp-float-label">Escribime por WhatsApp</span>
   <a href="https://wa.me/542604840322?text=Hola%20Carolina!%20Quiero%20sacar%20un%20turno%20para%20consulta%20nutricional." class="whatsapp-float-btn" target="_blank" aria-label="Contactar por WhatsApp">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 </div>
 
 <script>
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
-
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     mobileMenu.classList.toggle('open');
     document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
   });
-
   document.querySelectorAll('.mobile-link').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
@@ -1065,8 +703,6 @@
     });
   });
 </script>
-
-
 
 </body>
 </html>
