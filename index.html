@@ -164,12 +164,10 @@
   .btn-whatsapp:hover { background: #1da851; transform: translateY(-2px); }
   .whatsapp-icon { width: 22px; height: 22px; fill: white; }
 
+  /* SOBRE MI — sin foto, layout de una columna */
   .sobremi { background: var(--cream); }
-  .sobremi-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: center; margin-top: 60px; }
-  .sobremi-img { aspect-ratio: 3/4; border-radius: 24px; overflow: hidden; }
-  .sobremi-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
-  .sobremi-content .section-tag { margin-bottom: 12px; }
-  .sobremi-content p { color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem; }
+  .sobremi-inner { max-width: 780px; margin-top: 60px; }
+  .sobremi-inner p { color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem; }
   .sobremi-credentials { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
   .credential { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; font-weight: 500; }
   .credential::before { content: '✓'; color: var(--sage); font-weight: 700; }
@@ -234,7 +232,6 @@
     .pasos::before { display: none; }
     .resenas-grid { grid-template-columns: 1fr 1fr; }
     .agenda-grid { grid-template-columns: 1fr; }
-    .sobremi-grid { grid-template-columns: 1fr; }
     .primera { padding: 60px 24px; }
     .carnet-banner { padding: 48px 24px; }
     footer { padding: 48px 24px 32px; }
@@ -600,32 +597,27 @@
 </section>
 
 <section class="sobremi" id="sobre-mi">
-  <div class="sobremi-grid">
-    <div class="sobremi-img">
-      <img src="foto.jpg" alt="Lic. Carolina García Nutricionista">
+  <p class="section-tag">Sobre mí</p>
+  <h2 class="section-title">Lic. Carolina <em>García</em></h2>
+  <div class="sobremi-inner">
+    <p>Soy Licenciada en Nutrición con matrícula MP 1264, recibida en la Universidad Nacional de Cuyo. Desde que terminé la carrera supe que quería trabajar de forma cercana con la gente, sin protocolos rígidos ni dietas imposibles de sostener.</p>
+    <p>Vivo y trabajo en San Rafael, y eso me hace entender bien el ritmo de vida de por acá: los horarios complicados, las empanadas del domingo, el asado del fin de semana. Mi objetivo no es que comas perfecto, sino que comas mejor — de forma sostenible, sin culpa, adaptado a tu vida real.</p>
+    <p>Además de las consultas nutricionales, soy capacitadora oficial para el carnet de manipulación de alimentos, algo que me apasiona porque me permite llegar a otro público: los que trabajan en gastronomía, almacenes, catering y necesitan cumplir con la habilitación municipal.</p>
+    <div class="sobremi-credentials">
+      <div class="credential">Licenciada en Nutrición – UNCuyo · Matrícula MP 1264</div>
+      <div class="credential">Capacitadora oficial – Carnet de Manipulación de Alimentos</div>
+      <div class="credential">Atención presencial en San Rafael y virtual para todo el país</div>
+      <div class="credential">50% off en la primera consulta</div>
     </div>
-    <div class="sobremi-content">
-      <p class="section-tag">Sobre mí</p>
-      <h2 class="section-title">Lic. Carolina <em>García</em></h2>
-      <p>Soy Licenciada en Nutrición con matrícula MP 1264, recibida en la Universidad Nacional de Cuyo. Desde que terminé la carrera supe que quería trabajar de forma cercana con la gente, sin protocolos rígidos ni dietas imposibles de sostener.</p>
-      <p>Vivo y trabajo en San Rafael, y eso me hace entender bien el ritmo de vida de por acá: los horarios complicados, las empanadas del domingo, el asado del fin de semana. Mi objetivo no es que comas perfecto, sino que comas mejor — de forma sostenible, sin culpa, adaptado a tu vida real.</p>
-      <p>Además de las consultas nutricionales, soy capacitadora oficial para el carnet de manipulación de alimentos, algo que me apasiona porque me permite llegar a otro público: los que trabajan en gastronomía, almacenes, catering y necesitan cumplir con la habilitación municipal.</p>
-      <div class="sobremi-credentials">
-        <div class="credential">Licenciada en Nutrición – UNCuyo · Matrícula MP 1264</div>
-        <div class="credential">Capacitadora oficial – Carnet de Manipulación de Alimentos</div>
-        <div class="credential">Atención presencial en San Rafael y virtual para todo el país</div>
-        <div class="credential">50% off en la primera consulta</div>
-      </div>
-      <div class="sobremi-social">
-        <a href="https://instagram.com/carogarcia2940" target="_blank" class="social-btn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          Instagram
-        </a>
-        <a href="https://www.linkedin.com/in/carolina-garcia-02ab663aa" target="_blank" class="social-btn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn
-        </a>
-      </div>
+    <div class="sobremi-social">
+      <a href="https://instagram.com/carogarcia2940" target="_blank" class="social-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.linkedin.com/in/carolina-garcia-02ab663aa" target="_blank" class="social-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
     </div>
   </div>
 </section>
